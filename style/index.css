@@ -115,6 +115,7 @@
 }
 .menu-mobile a:hover{
     color: var(--azul-claro);
+    font-size: 20px;
 }
 
 .menu-mobile a:last-child {

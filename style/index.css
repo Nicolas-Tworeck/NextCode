@@ -76,6 +76,7 @@ h1 {
 @media (max-width:930px){
     .nav{
         display: flex;
+        align-items: center;
         img{
             margin: 0;
         }

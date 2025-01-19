@@ -9,7 +9,7 @@
     grid-template-columns: 33% 66%;
     justify-content: center;
     text-align: center;
-
+    position: fixed;
     img{
         margin: 0 0 0 40px;
     }

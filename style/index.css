@@ -12,6 +12,7 @@
     position: fixed;
     border-bottom: 7px solid var(--preto);
     box-shadow: 0 5px 20px  var(--preto);
+    top: 0;
     img{
         margin: 0 0 0 40px;
     }
@@ -54,18 +55,6 @@
 
 
 
-@media (max-width:930px){
-    .nav{
-        display: flex;
-        align-items: center;
-        img{
-            margin: 0;
-        }
-    }
-    .button{
-        display: none;
-    }
-}
 .hamburger {
     display: none;
     flex-direction: column;
@@ -129,8 +118,19 @@
     margin: 0 0 20px 0;
 }
 
-/* Exibir no mobile */
-@media (max-width: 930px) {
+
+
+
+
+@media (max-width:930px){
+    .nav{
+        display: flex;
+        align-items: center;
+        img{
+            margin: 0;
+        }
+    }
+
     .button {
         display: none;
     }

@@ -1,26 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menuButton");
-    const sideMenu = document.getElementById("sideMenu");
-    const closeButton = document.getElementById("closeButton");
-    const body = document.body;
+// Selecionar elementos
+const hamburger = document.querySelector('.hamburger');
+const menuMobile = document.querySelector('.menu-mobile');
 
-    // Quando o botão de menu for clicado, abre o menu
-    menuButton.addEventListener("click", () => {
-        sideMenu.classList.add("open");
-        body.style.overflow = "hidden"; // Impede rolagem da página quando o menu está aberto
-    });
+// Abrir ou fechar o menu ao clicar no botão hambúrguer
+hamburger.addEventListener('click', () => {
+    menuMobile.classList.toggle('active');
+});
 
-    // Quando o botão de fechar for clicado, fecha o menu
-    closeButton.addEventListener("click", () => {
-        sideMenu.classList.remove("open");
-        body.style.overflow = ""; // Restaura a rolagem da página
-    });
+// Fechar o menu ao clicar fora dele
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = menuMobile.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
 
-    // Fecha o menu ao clicar fora dele
-    window.addEventListener("click", (e) => {
-        if (!sideMenu.contains(e.target) && e.target !== menuButton) {
-            sideMenu.classList.remove("open");
-            body.style.overflow = ""; // Restaura a rolagem
-        }
-    });
+    // Fechar o menu apenas se o clique não for no menu nem no botão
+    if (!isClickInsideMenu && !isClickOnHamburger && menuMobile.classList.contains('active')) {
+        menuMobile.classList.remove('active');
+    }
 });

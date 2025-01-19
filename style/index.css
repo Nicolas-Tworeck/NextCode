@@ -84,3 +84,68 @@ h1 {
         display: none;
     }
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: var(--branco);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-mobile {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: var(--azul-escuro);
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none; /* Impede interação enquanto o menu estiver fechado */
+}
+
+.menu-mobile.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto; /* Permite interação quando o menu estiver aberto */
+}
+
+
+
+.menu-mobile a {
+    color: var(--branco);
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid var(--azul-claro);
+}
+
+.menu-mobile a:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Exibir no mobile */
+@media (max-width: 930px) {
+    .button {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

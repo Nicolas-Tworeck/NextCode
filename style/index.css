@@ -71,3 +71,16 @@ h1 {
     }
     
 }
+
+
+@media (max-width:930px){
+    .nav{
+        display: flex;
+        img{
+            margin: 0;
+        }
+    }
+    .button{
+        display: none;
+    }
+}

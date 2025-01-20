@@ -5,6 +5,7 @@
     height: 100%;
     overflow: hidden;
     z-index: -10000;
+    display: none;
 }
 .slides-cell{
     width: 400%;

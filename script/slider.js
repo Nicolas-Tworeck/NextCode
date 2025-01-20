@@ -3,7 +3,7 @@ document.getElementById("radio1").checked = true;
 
 setInterval( function(){
     nextImage();
-}, 5000)
+}, 2000)
 
 function nextImage(){
     count++;
@@ -11,6 +11,7 @@ function nextImage(){
         count = 1;
     }
 
+    document.getElementById("radio" + count).checked = true;
     document.getElementById("radio-cell" + count).checked = true;
 
 }

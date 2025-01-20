@@ -1,8 +1,12 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
 :root{
     --azul-escuro:#001fb6;
     --azul-claro:#00a5ff;
     --branco: #ffffff;
     --preto: #000000;
+    --preto-opaco:#00000090;
 
     --font:  arial;
 }

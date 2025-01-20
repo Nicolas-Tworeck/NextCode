@@ -1,4 +1,4 @@
-// Selecionar elementos
+//  menu hamburguer
 const hamburger = document.querySelector('.hamburger');
 const menuMobile = document.querySelector('.menu-mobile');
 
@@ -17,3 +17,21 @@ document.addEventListener('click', (event) => {
         menuMobile.classList.remove('active');
     }
 });
+
+
+
+//locations
+function inicio() {
+    window.location.href = "#slider";
+}
+
+function empresa() {
+    window.location.href = "#empresa";
+}
+function vantagem(){
+    window.location.href = "#vantagem";
+}
+
+function whats() {
+    window.location.href = "https://wa.link/jnllgx";
+}

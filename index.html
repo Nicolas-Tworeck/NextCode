@@ -16,9 +16,9 @@
     <div class="nav">
         <img src="img/logo-nav.svg" width="70%" alt="IMAGE">
         <div class="button">
-            <a href="">INÍCIO</a>
-            <a href="">EMPRESA</a>
-            <a href="">BUTTON</a>
+            <a onclick="inicio()">INÍCIO</a>
+            <a onclick="empresa()">EMPRESA</a>
+            <a onclick="vantagem()">VANTAGENS</a>
             <a href="">BUTTON</a>
             <a href="">BUTTON</a>
         </div>
@@ -32,18 +32,18 @@
             <div class="menu-bar">
                 <img src="img/logo-nav.svg" width="70%" alt="">
             </div>
-            <a href="">INÍCIO</a>
-            <a href="">EMPRESA</a>
-            <a href="">BUTTON</a>
-            <a href="">BUTTON</a>
-            <a href="">BUTTON</a>
+            <a onclick="inicio()">INÍCIO</a>
+            <a onclick="empresa()">EMPRESA</a>
+            <a onclick="vantagem()">VANTAGENS</a>
+            <a>BUTTON</a>
+            <a>BUTTON</a>
         </div>
     </div>
 
-    <div class="nav1">
+    <div class="nav1" id="slider">
         <img src="img/logo-nav.svg" width="70%" alt="IMAGE">
 
-        
+
     </div>
 
     <div class="slider">
@@ -55,14 +55,12 @@
 
             <div class="slide first">
 
-                <img src="img/QUALIDADE.svg"
-                    alt="imagem 1">
+                <img src="img/QUALIDADE.svg" alt="imagem 1">
 
             </div>
             <div class="slide">
 
-                <img src="img/SEGURANÇA.svg"
-                    alt="imagem 2">
+                <img src="img/SEGURANÇA.svg" alt="imagem 2">
 
             </div>
 
@@ -98,14 +96,12 @@
 
             <div class="slide-cell first-cell">
 
-                <img src="img/QUALIDADE-cell.svg"
-                    alt="imagem 1">
+                <img src="img/QUALIDADE-cell.svg" alt="imagem 1">
 
             </div>
             <div class="slide-cell">
 
-                <img src="img/SEGURANÇA-cell.svg"
-                    alt="imagem 2">
+                <img src="img/SEGURANÇA-cell.svg" alt="imagem 2">
 
             </div>
 
@@ -129,7 +125,96 @@
 
     </div>
 
-   
+    <div class="empresa" id="empresa">
+        <h1>EMPRESA</h1>
+        <div class="folder">
+            <img src="" alt="IMAGE">
+            <p>Na <strong>NextCode Solutions</strong>, transformamos ideias em experiências extraordinárias.
+                Somos especialistas em desenvolver sistemas personalizados que vão muito além do esperado,
+                proporcionando melhorias significativas para nossos clientes. Com soluções inovadoras e tecnologia de
+                ponta, ajudamos sua empresa a alcançar novos níveis de desempenho, eficiência e produtividade.
+
+                Nosso compromisso é criar sites sob medida que reflitam a essência do seu negócio, oferecendo
+                implementações robustas e de alto nível que atendem às demandas mais desafiadoras. Não importa o tamanho
+                do projeto, nossa equipe está dedicada a entregar resultados que superem expectativas.
+
+                Com a NextCode Solutions, você não apenas moderniza sua empresa, mas também acelera seu crescimento com
+                inteligência, velocidade e excelência. Escolha um parceiro que entende suas necessidades e trabalha para
+                transformar o futuro do seu negócio.</p>
+        </div>
+        <div class="qualidades">
+            <div>
+                <img src="img/visao.svg" alt="">
+            </div>
+            <div>
+                <img src="img/missao.svg" alt="">
+            </div>
+            <h2>VISÃO</h2>
+            <h2>MISSÃO</h2>
+            <p>Ser a principal escolha em desenvolvimento de soluções digitais personalizadas, unindo tecnologia,
+                expertise e inovação para atender às demandas do mercado com excelência, segurança e resultados de alto
+                impacto.
+
+                Buscamos transformar o modo como empresas interagem com a tecnologia, oferecendo sistemas que
+                impulsionam a produtividade, a eficiência e o crescimento sustentável, tornando-nos referência em
+                inovação e confiança no setor.</p>
+            <p>Transformar o mercado digital, oferecendo soluções tecnológicas sob medida, com suporte especializado,
+                para garantir o crescimento eficiente, seguro e sustentável das empresas. Nosso compromisso é entregar
+                produtos inovadores e de alta qualidade, que simplifiquem processos, impulsionem a produtividade e
+                contribuam para o desenvolvimento responsável e estratégico de nossos clientes.</p>
+
+        </div>
+        <div class="valores">
+            <img src="img/valores.svg" alt="">
+            <h2>VALORES</h2>
+            <div class="valores-ul">
+
+                <p><strong>Transparência:</strong> Atuamos com clareza e abertura em todas as nossas interações,
+                    assegurando que nossos clientes
+                    compreendam plenamente nossos processos e soluções.</p>
+
+
+                <p><strong>Integridade:</strong> Priorizamos a ética e a honestidade em todas as ações,
+                    construindo relações de confiança
+                    sólida
+                    com clientes, parceiros e colaboradores.</p>
+
+
+                <p><strong>Excelência:</strong> Entregamos soluções tecnológicas com o mais alto padrão de
+                    qualidade, buscando superar as
+                    expectativas e garantir resultados excepcionais. </p>
+
+
+                <p><strong>Inovação:</strong> Estamos sempre em busca de novas ideias e tecnologias que
+                    impulsionem nossos projetos e criem
+                    valor real para nossos clientes.</p>
+
+
+                <p><strong>Foco no Cliente:</strong> Escutamos, entendemos e atendemos às necessidades
+                    específicas de cada cliente, oferecendo
+                    soluções personalizadas que geram impacto positivo. </p>
+
+
+                <p><strong>Especialização Técnica:</strong> Contamos com uma equipe altamente qualificada e
+                    comprometida, capaz de desenvolver soluções
+                    modernas, eficientes e alinhadas às demandas do mercado.</p>
+
+
+                <p><strong>Colaboração:</strong> Acreditamos no poder do trabalho em equipe, tanto internamente
+                    quanto com nossos parceiros,
+                    para
+                    criar resultados que transformam negócios. </p>
+
+                    
+            </div>
+            <h2 id="chamada">Descubra como nossos sistemas podem fazer a diferença no seu negócio. <a onclick="whats()">Junte-se a nós</a></h2>
+
+        </div>
+    </div>
+
+
+
+
 
     <script src="script/index.js"></script>
     <script src="script/slider.js"></script>

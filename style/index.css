@@ -419,7 +419,14 @@ body {
     .qualidades-cell {
         display: block;
         margin: 20px 7% 20px 7%;
-
+        .back-visao,
+        .back-missao {
+            background: var(--branco);
+            margin: 20px 5px 0 5px;
+            padding: 15px;
+            border-radius: 10px;
+    
+        }
         h2 {
             margin: 0 0 20px 0;
             text-decoration: underline 2px var(--azul-escuro);

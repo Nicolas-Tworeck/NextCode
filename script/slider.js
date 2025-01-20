@@ -11,6 +11,8 @@ function nextImage(){
         count = 1;
     }
 
-    document.getElementById("radio" + count).checked = true;
+    document.getElementById("radio-cell" + count).checked = true;
 
 }
+
+

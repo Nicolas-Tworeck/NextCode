@@ -1,0 +1,88 @@
+
+
+.slider-cell{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10000;
+}
+.slides-cell{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    z-index: -10000;
+}
+
+.slides-cell input{
+    display: none;
+    z-index: -10000;
+}
+
+.slide-cell{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    z-index: -10000;
+}
+.slide-cell img{
+    width: 100%;
+    z-index: -10000;
+}
+
+.manual-navigation-cell{
+    position: absolute;
+display: none;
+}
+
+.manual-btn-cell{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn-cell:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn-cell:hover{
+    background: white;
+}
+
+#radio-cell1:checked ~ .first-cell{
+    margin-left: 0;
+}
+#radio-cell2:checked ~ .first-cell{
+    margin-left: -25%;
+}
+
+.navigation-auto-cell div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navigation-auto-cell{
+    position: absolute;
+    width: 100%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.navigation-auto-cell div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio-cell1:checked ~ .navigation-auto-cell .auto-btn-cell1{
+    background: white;
+}
+#radio-cell2:checked ~ .navigation-auto-cell .auto-btn-cell2{
+    background: white;
+}
+@media(max-width:580px){
+    .slider-cell{
+        display:block;
+    }
+}
+

@@ -80,5 +80,9 @@ display: none;
 #radio2:checked ~ .navigation-auto .auto-btn2{
     background: white;
 }
-
+@media(max-width:580px){
+    .slider{
+        display: none;
+    }
+}
 

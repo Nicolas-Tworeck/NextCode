@@ -4,6 +4,9 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background: var(--ceu);
+}
 
 .nav1 {
     display: grid;
@@ -134,12 +137,13 @@
     right: 0;
     top: 0;
     height: 100vh;
-    background: var(--azul-escuro);
+    background: var(--preto-opaco);
     width: 200px;
-
     display: flex;
+
     flex-direction: column;
     pointer-events: none;
+    text-align: start;
     /* Impede interação enquanto o menu estiver fechado */
 }
 
@@ -156,9 +160,11 @@
 
 .menu-mobile a {
     color: var(--branco);
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 20%;
     font-weight: bolder;
+    text-decoration: underline 2px var(--azul-claro);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .menu-mobile a:hover {
@@ -173,105 +179,190 @@
 .menu-bar {
     width: 100%;
     margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
 }
-#empresa{
+
+#empresa {
     scroll-margin-top: 120px;
 }
-.empresa{
+
+.empresa {
     text-align: center;
-    margin: 50px 0 0 0 ;
-    h1{
+    margin: 50px 0 0 0;
+
+    h1 {
         margin: 0 0 50px 0;
         text-decoration: underline 2px var(--azul-escuro);
     }
-    .folder{
+
+    .folder {
         display: grid;
         grid-template-columns: 50% 50%;
         margin: 50px 7% 20px 7%;
         text-align: center;
-        p{
-            text-align: justify;
-            margin: 0 10px 0 10px;
-            strong{
-                color: var(--preto-opaco);
+
+        .apresentacao {
+            p {
+                text-align: justify;
+                margin: 0 10px 0 10px;
+
+                strong {
+                    color: var(--preto-opaco);
+                }
             }
         }
-        img{
+
+        img {
             margin: 0 10px 0 10px;
             width: 80%;
             margin-top: -15%;
         }
-        .logo-cell{
+
+        .logo-cell {
             display: none;
         }
     }
 }
 
-.qualidades{
+.qualidades {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 20px 7% 20px 7%;
-    h2{
+
+    .back-visao,
+    .back-missao {
+        background: var(--branco);
+        margin: 0 5px 0 5px;
+
+    }
+
+    #img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #text {
+        border-radius: 0 0 10px 10px;
+    }
+
+    h2 {
         margin: 0 0 20px 0;
         text-decoration: underline 2px var(--azul-escuro);
     }
-    img{
+
+    img {
         width: 20%;
+        margin: 15px 0 0 0;
     }
-    p{
+
+    p {
         text-align: justify;
-        margin: 0 10px 0 10px;
+        margin: 0 10px 15px 10px;
     }
 
 
 }
-.qualidades-cell{
+
+.qualidades-cell {
     display: none;
 }
-.valores{
+
+.valores {
     margin: 0 7% 0 7%;
-    h2{
+
+    h2 {
         margin: 0 0 20px 0;
         text-decoration: underline 2px var(--azul-escuro);
     }
-    img{
+
+    img {
         width: 10%;
     }
-    .valores-ul{
+
+    .valores-ul {
         text-align: justify;
     }
-    p{
+
+    p {
         margin: 5px 0 5px 0;
-        strong{
+
+        strong {
             color: var(--preto-opaco);
         }
     }
-    #chamada{
+
+    #chamada {
         margin: 50px 0 0 0;
         text-decoration: none;
-        a{
+
+        a {
             text-decoration: underline 2px var(--azul-escuro);
             transition: 0.3s;
             cursor: pointer;
         }
-        a:hover{
+
+        a:hover {
             font-size: 27px;
             color: var(--azul-escuro);
-            text-decoration:underline 2px var(--azul-claro);
+            text-decoration: underline 2px var(--azul-claro);
+        }
+    }
+}
+#vantagem{
+    scroll-margin-top: 120px;
+}
+.vantagem {
+    margin: 80px 0 0 0;
+    text-align: center;
+
+    h1 {
+        margin: 0 0 40px 0;
+    }
+
+    .vantagem-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        margin: 0 5% 50px 5%;
+        .vantagem-content-icons {
+            display: flex;
+            justify-content: center;
+            margin: 0 20px 20px 20px;
+            background: var(--branco);
+            padding: 10px;
+            border-radius: 10px;
+            .check {
+                display: flex;
+                align-items: start;
+                margin: 10px 10px  0 0;
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            .vantagem-content-text {
+                text-align: start;
+
+                p {
+                    text-align: justify;
+                }
+            }
         }
     }
 }
 
-
 @media (max-width:930px) {
-    .empresa{
-        .folder{
+    .empresa {
+        .folder {
             display: flex;
-            #logo-pc{
+
+            #logo-pc {
                 display: none;
             }
         }
     }
+
     .nav {
         .button {
             a {
@@ -287,7 +378,7 @@
         align-items: center;
 
         img {
-            margin: 0;
+            margin: 10px 0 0 0;
         }
     }
 
@@ -296,7 +387,7 @@
         align-items: center;
 
         img {
-            margin: 0;
+            margin: 10px 0 0 0;
         }
     }
 
@@ -310,55 +401,73 @@
         display: flex;
     }
 
-    .empresa{
-        .folder{
+    .empresa {
+        .folder {
             display: flex;
             flex-direction: column;
-            img{
+
+            img {
                 margin-bottom: 50px;
             }
         }
     }
-    .qualidades{
+
+    .qualidades {
         display: none;
     }
-    .qualidades-cell{
+
+    .qualidades-cell {
         display: block;
         margin: 20px 7% 20px 7%;
-        h2{
+
+        h2 {
             margin: 0 0 20px 0;
             text-decoration: underline 2px var(--azul-escuro);
         }
-        img{
+
+        img {
             width: 20%;
             margin: 20px 0 0 0;
         }
-        p{
+
+        p {
             text-align: justify;
         }
     }
-    .valores{
-        img{
+
+    .valores {
+        img {
             width: 20%;
         }
     }
-    #chamada{
+
+    #chamada {
         font-size: 20px;
     }
-    #logo-pc{
+
+    #logo-pc {
         display: none;
     }
-    .empresa{
-        .folder{
-            .logo-cell{
+
+    .empresa {
+        .folder {
+            .logo-cell {
                 display: block;
                 margin: 5% 0 0 0;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
         }
     }
+    .vantagem {
+        .vantagem-content {
+            display: flex;
+            flex-direction: column;
+        }
 
-    
+
+    }
+
 }

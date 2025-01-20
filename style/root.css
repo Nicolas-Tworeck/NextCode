@@ -4,9 +4,10 @@
 :root{
     --azul-escuro:#001fb6;
     --azul-claro:#00a5ff;
+    --ceu:#e8fcff;
     --branco: #ffffff;
     --preto: #000000;
-    --preto-opaco:#00000090;
+    --preto-opaco:#000000bf;
 
     --font:  arial;
 }

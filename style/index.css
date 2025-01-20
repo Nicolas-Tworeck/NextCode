@@ -188,6 +188,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         margin: 50px 7% 20px 7%;
+        text-align: center;
         p{
             text-align: justify;
             margin: 0 10px 0 10px;
@@ -196,7 +197,12 @@
             }
         }
         img{
-            margin: 0 10px 0 10px
+            margin: 0 10px 0 10px;
+            width: 80%;
+            margin-top: -15%;
+        }
+        .logo-cell{
+            display: none;
         }
     }
 }
@@ -218,6 +224,9 @@
     }
 
 
+}
+.qualidades-cell{
+    display: none;
 }
 .valores{
     margin: 0 7% 0 7%;
@@ -246,6 +255,7 @@
             cursor: pointer;
         }
         a:hover{
+            font-size: 27px;
             color: var(--azul-escuro);
             text-decoration:underline 2px var(--azul-claro);
         }
@@ -253,7 +263,15 @@
 }
 
 
-@media (max-width:760px) {
+@media (max-width:930px) {
+    .empresa{
+        .folder{
+            display: flex;
+            #logo-pc{
+                display: none;
+            }
+        }
+    }
     .nav {
         .button {
             a {
@@ -291,4 +309,56 @@
     .hamburger {
         display: flex;
     }
+
+    .empresa{
+        .folder{
+            display: flex;
+            flex-direction: column;
+            img{
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .qualidades{
+        display: none;
+    }
+    .qualidades-cell{
+        display: block;
+        margin: 20px 7% 20px 7%;
+        h2{
+            margin: 0 0 20px 0;
+            text-decoration: underline 2px var(--azul-escuro);
+        }
+        img{
+            width: 20%;
+            margin: 20px 0 0 0;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    .valores{
+        img{
+            width: 20%;
+        }
+    }
+    #chamada{
+        font-size: 20px;
+    }
+    #logo-pc{
+        display: none;
+    }
+    .empresa{
+        .folder{
+            .logo-cell{
+                display: block;
+                margin: 5% 0 0 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    
 }

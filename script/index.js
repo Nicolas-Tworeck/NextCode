@@ -34,7 +34,13 @@ function vantagem(){
 function vantagem(){
     window.location.href =  "#vantagem";
 }
+function projetos(){
+    window.location.href = "#projetos";
+}
 
 function whats() {
     window.location.href = "https://wa.link/jnllgx";
+}
+function email(){
+    window.location.href = "";
 }

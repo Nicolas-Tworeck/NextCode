@@ -21,7 +21,7 @@
             <a onclick="inicio()">INÍCIO</a>
             <a onclick="empresa()">EMPRESA</a>
             <a onclick="vantagem()">VANTAGENS</a>
-            <a href="">BUTTON</a>
+            <a onclick="projetos()">PROJETOS</a>
             <a href="">BUTTON</a>
         </div>
         <!-- Menu Hamburguer -->
@@ -37,7 +37,7 @@
             <a onclick="inicio()">INÍCIO</a>
             <a onclick="empresa()">EMPRESA</a>
             <a onclick="vantagem()">VANTAGENS</a>
-            <a>BUTTON</a>
+            <a onclick="projetos()">PROJETOS</a>
             <a>BUTTON</a>
         </div>
     </div>
@@ -191,12 +191,14 @@
         </div>
         <div class="qualidades-cell">
             <div class="back-visao">
-                <img src="img/visao.svg"id="img" alt="">
+                <img src="img/visao.svg" id="img" alt="">
                 <h2 id="title">VISÃO</h2>
-                <p id="text">Ser a principal escolha em desenvolvimento de soluções digitais personalizadas, unindo tecnologia,
-                    expertise e inovação para atender às demandas do mercado com excelência, segurança e resultados de alto
+                <p id="text">Ser a principal escolha em desenvolvimento de soluções digitais personalizadas, unindo
+                    tecnologia,
+                    expertise e inovação para atender às demandas do mercado com excelência, segurança e resultados de
+                    alto
                     impacto.
-    
+
                     Buscamos transformar o modo como empresas interagem com a tecnologia, oferecendo sistemas que
                     impulsionam a produtividade, a eficiência e o crescimento sustentável, tornando-nos referência em
                     inovação e confiança no setor.</p>
@@ -205,8 +207,10 @@
             <div class="back-missao">
                 <img src="img/missao.svg" id="img" alt="">
                 <h2 id="title">MISSÃO</h2>
-                <p id="text">Transformar o mercado digital, oferecendo soluções tecnológicas sob medida, com suporte especializado,
-                    para garantir o crescimento eficiente, seguro e sustentável das empresas. Nosso compromisso é entregar
+                <p id="text">Transformar o mercado digital, oferecendo soluções tecnológicas sob medida, com suporte
+                    especializado,
+                    para garantir o crescimento eficiente, seguro e sustentável das empresas. Nosso compromisso é
+                    entregar
                     produtos inovadores e de alta qualidade, que simplifiquem processos, impulsionem a produtividade e
                     contribuam para o desenvolvimento responsável e estratégico de nossos clientes.</p>
             </div>
@@ -310,8 +314,49 @@
     </div>
 
 
+    <div class="projetos" id="projetos">
+        <h1>PROJETOS</h1>
+        <div class="projetos-content-grid">
+            <div class="projetos-content">
+                <div class="projetos-content-icons">
+                    <img src="img/WEB.svg" alt="">
+                </div>
+                <h2>Aplicações Web</h2>
+                <p>Sistemas desenvolvidos para serem acessados diretamente pela internet.</p>
+            </div>
+            <div class="projetos-content">
+                <div class="projetos-content-icons">
+                    <img src="img/DESKTOP.svg" alt="">
+                </div>
+                <h2>Aplicações Locais</h2>
+                <p>Sistemas desenvolvidos para serem executados somente em aparelhos locais da empresa, como
+                    computadores da empresa.</p>
+            </div>
+        </div>
+    </div>
 
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-icons">
+                <img src="img/logo-nav.svg" width="300px" alt="">
+            </div>
+            <div class="footer-content-contact">
+                <div class="contact">
+                    <i class="bi bi-whatsapp" onclick="whats()" class="whats"></i>
+                    <h3 class="whats" onclick="whats()">(42) 98403-3886</h3>
+                </div>
+                <div class="contact">
+                    <i class="bi bi-envelope" class="email"></i>
+                    <h3 class="email">nico.tworeck@yahoo.com</h3>
+                </div>
+                <div class="contact">
+                    <i class="bi bi-instagram" class="insta"></i>
+                    <h3 class="insta">@NextCode.Solutions</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script/index.js"></script>
     <script src="script/slider.js"></script>

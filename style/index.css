@@ -308,12 +308,18 @@ body {
         }
     }
 }
-#vantagem{
+
+#vantagem {
     scroll-margin-top: 120px;
 }
+
 .vantagem {
     margin: 80px 0 0 0;
     text-align: center;
+
+    h1 {
+        text-decoration: underline 2px var(--azul-escuro);
+    }
 
     h1 {
         margin: 0 0 40px 0;
@@ -324,6 +330,7 @@ body {
         grid-template-columns: 50% 50%;
         justify-content: center;
         margin: 0 5% 50px 5%;
+
         .vantagem-content-icons {
             display: flex;
             justify-content: center;
@@ -331,10 +338,12 @@ body {
             background: var(--branco);
             padding: 10px;
             border-radius: 10px;
+
             .check {
                 display: flex;
                 align-items: start;
-                margin: 10px 10px  0 0;
+                margin: 10px 10px 0 0;
+
                 img {
                     width: 40px;
                 }
@@ -351,6 +360,105 @@ body {
         }
     }
 }
+
+#projetos {
+    scroll-margin-top: 105px;
+}
+
+.projetos {
+    h1 {
+        text-decoration: underline 2px var(--azul-escuro);
+    }
+
+    text-align: center;
+
+    .projetos-content-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 50px 7% 20px 7%;
+        background: var(--branco);
+        padding: 15px;
+        border-radius: 10px;
+
+        .projetos-content {
+
+            .projetos-content-icons {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+
+.footer {
+    background: var(--preto-opaco);
+    padding: 20px;
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .footer-content-icons {
+            width: 300px;
+        }
+
+        .footer-content-contact {
+            display: grid;
+            justify-content: center;
+            color: var(--branco);
+
+            .contact {
+                display: flex;
+
+                h3 {
+                    margin: 0 0 0 10px;
+                }
+
+                i {
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
+                i:hover {
+                    color: var(--azul-claro);
+                }
+
+                .whats {
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
+                .email {
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
+                .insta {
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
+                .whats:hover {
+                    color: var(--azul-claro);
+                }
+
+                .email:hover {
+                    color: var(--azul-claro);
+                }
+
+                .insta:hover {
+                    color: var(--azul-claro);
+                }
+            }
+        }
+
+    }
+}
+
 
 @media (max-width:930px) {
     .empresa {
@@ -419,14 +527,16 @@ body {
     .qualidades-cell {
         display: block;
         margin: 20px 7% 20px 7%;
+
         .back-visao,
         .back-missao {
             background: var(--branco);
             margin: 20px 5px 0 5px;
             padding: 15px;
             border-radius: 10px;
-    
+
         }
+
         h2 {
             margin: 0 0 20px 0;
             text-decoration: underline 2px var(--azul-escuro);
@@ -468,6 +578,7 @@ body {
             }
         }
     }
+
     .vantagem {
         .vantagem-content {
             display: flex;
@@ -477,4 +588,22 @@ body {
 
     }
 
+    .projetos .projetos-content-grid {
+        display: flex !important;
+        flex-direction: column !important;
+
+        .projetos-content-icons {
+            margin: 20px 0 0 0;
+        }
+    }
+
+    .footer-content {
+        display: flex !important;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .footer-content-contact {
+            margin: 0 0 40px 0;
+        }
+    }
 }
